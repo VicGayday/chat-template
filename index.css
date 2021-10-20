@@ -11,12 +11,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-/*
-main {
-  width: 100%;
-  height: 70%;
-  overflow: hidden;
-} */
 
 footer {
   height: 100px;
@@ -35,8 +29,7 @@ footer {
 }
 
 .buttons-container {
-  max-width: 10%;
-
+  max-width: 20%;
 }
 
 .button {
@@ -83,10 +76,22 @@ footer {
   justify-content: space-around;
 }
 
+@media screen and (max-width: 429px) {
+  .control-panel {
+  width: 65%;
+  }
+}
+
 a {
   margin-top: 10px;
   text-align: center;
   color:darkslategrey;
+}
+
+@media screen and (max-width: 429px) {
+  a {
+  font-size: 0.70em;
+  }
 }
 
 .chat-list {
@@ -98,16 +103,30 @@ a {
   overflow-y: scroll;
 }
 
+
+@media screen and (max-width: 429px) {
+  .chat-list {
+  width: 100%;
+  }
+}
+
 .chat {
   padding: 10px;
 }
 
 .input-text {
+  padding: 10px;
+  width: 80%;
+  position: relative;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 429px) {
+  .input-text {
+  left: 50px;
   padding: 20px;
   width: 70%;
-  left: 50px;
-  position: relative;
-  border-radius: 5px;;
+  }
 }
 
 #active-chat {
@@ -122,6 +141,12 @@ a {
   background-size: 100%;
 }
 
+@media screen and (max-width: 429px) {
+  .message-view {
+  display: none;
+  }
+}
+
 .container {
     border: 2px solid #dedede;
     background-color: #f1f1f1;
@@ -129,11 +154,17 @@ a {
     padding: 10px;
     margin: 10px 15px;
     margin-left: auto;
-    min-height: 10vh;
+    min-height: 6vh;
     max-width: 40vw;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+  min-height: 10vh;
+  }
 }
 
 .container-answer {
@@ -141,10 +172,16 @@ a {
     border-radius: 5px;
     padding: 10px;
     margin: 10px 15px;
-    min-height: 10vh;
+    min-height: 6vh;
     max-width: 40vw;
     border-color: #ccc;
     background-color: #ddd;
+}
+
+@media screen and (min-width: 900px) {
+  .container-answer {
+  min-height: 10vh;
+  }
 }
 
 .time-right {
