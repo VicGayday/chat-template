@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+/*
+main {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+} */
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: rgb(23, 199, 199);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-header {
+  height: 50px;
+  background-color:rgb(23, 199, 199);
+  display: flex;
+  justify-content:space-between;
+}
+
+.buttons-container {
+  max-width: 10%;
+
+}
+
+.button {
+  float: right;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  margin: 0 2px;
+  opacity: 70%;
+}
+
+.close {
+  background: url('./assets/close.png') center no-repeat;
+  background-size: cover;
+    height: 1.05em;
+    width: 1.05em;
+
+}
+
+.expand {
+  background: url('./assets/expand.png') center no-repeat;
+  background-size: cover;
+    height: 1.05em;
+    width: 1.05em;
+}
+
+.minimize {
+  background: url('./assets/minimize.png') center no-repeat;
+  background-size: cover;
+    height: 1.05em;
+    width: 1.05em;
+}
+
+.logo {
+  margin: 5px 0 0 10px;
+  height: 40px;
+  width: 30px;
+}
+
+.control-panel {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  margin-top: 10px;
+  text-align: center;
+  color:darkslategrey;
+}
+
+.chat-list {
+  padding-top: 10px;
+  float: left;
+  width: 28%;
+  height: 76vh;
+  border-right: solid rgb(23, 199, 199) 2px;
+  overflow-y: scroll;
+}
+
+.chat {
+  padding: 10px;
+}
+
+.input-text {
+  padding: 20px;
+  width: 70%;
+  left: 50px;
+  position: relative;
+  border-radius: 5px;;
+}
+
+#active-chat {
+  background:rgb(23, 199, 199);
+}
+
+.message-view {
+  height: 76vh;
+  width: 72%;
+  overflow-y: scroll;
+  background: url('./assets/background.png');
+  background-size: 100%;
+}
+
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 15px;
+    margin-left: auto;
+    min-height: 10vh;
+    max-width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.container-answer {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 15px;
+    min-height: 10vh;
+    max-width: 40vw;
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+.time-right {
+  color: #aaa;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+}
+
+

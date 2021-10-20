@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>Chat</title>
+</head>
+<body>
+  <header class="chat-header">
+    <img src="./assets/logo.png" alt="logo" class="logo">
+       <nav class="control-panel">
+      <a href="#">Чаты</a>
+      <a href="#">Мой статус</a>
+      <a href="#">Позвонить</a>
+      </nav>
+    <nav class="buttons-container">
+      <button type="button" class="minimize button"></button>
+      <button type="button" class="expand button"></button>
+      <button type="button" class="close button"></button>
+    </nav>
+      </header>
+  <main>
+    <section class="chat-list">
+      <!-- <input type="text" placeholder="Поиск чата"> -->
+      <ul>
+        <li class="chat">Владимир</li>
+        <li class="chat">Юлия маникюр</li>
+        <li class="chat">Зинаида Петровна</li>
+        <li class="chat">Сергей сосед</li>
+        <li class="chat">Мама</li>
+        <li class="chat">Великий султан</li>
+        <li class="chat" id="active-chat">Анатолий</li>
+        <li class="chat">Михалыч</li>
+        <li class="chat">Родительский чат 1 Г класса</li>
+        <li class="chat">Бабушка</li>
+        <li class="chat">Оля</li>
+        <li class="chat">София(Анатолий)</li>
+        <li class="chat">Ксюша</li>
+        <li class="chat">Малой</li>
+        <li class="chat">Анастасия 1-я поликлиника</li>
+      </ul>
+    </section>
+    <section class="message-view">
+      <div class="container">
+    <p class="my-speech">Привет, как дела?</p>
+  <span class="time-right">11:00</span>
+</div>
+<div class="container-answer">
+    <p>Все хорошо, спасибо, ты как?</p>
+  <span class="time-left">11:05</span>
+  </div>
+  <div class="container">
+    <p class="my-speech">Какие планы на вечер?</p>
+  <span class="time-right">11:06</span>
+</div>
+<div class="container-answer">
+    <p>Пока вроде никаких, есть предложения?</p>
+  <span class="time-left">11:08</span>
+</div>
+<div class="container">
+    <p class="my-speech">В боулинг не хочешь сходить?</p>
+  <span class="time-right">11:09</span>
+</div>
+<div class="container-answer">
+    <p>Нет, палец вывихнул немного(</p>
+  <span class="time-left">11:13</span>
+</div>
+<div class="container">
+    <p class="my-speech">А как печатаешь?)</p>
+  <span class="time-right">11:15</span>
+</div>
+<div class="container-answer">
+    <p>Голосовым набором пользуюсь)ХD</p>
+  <span class="time-left">11:18</span>
+</div>
+    </section>
+  </main>
+  <footer>
+    <input type="text" placeholder="Введите сообщение" class="input-text">
+  </footer>
+</body>
+</html>
